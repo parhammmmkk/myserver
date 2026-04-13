@@ -1,0 +1,10 @@
+name: xray
+on: workflow_dispatch
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+    - name: install
+      run: |
+        bash <(curl -Ls https://raw.githubusercontent.com/XTLS/Xray-install/main/install-release.sh)
+        sleep 21600
